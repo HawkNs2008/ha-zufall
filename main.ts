@@ -1,9 +1,12 @@
 input.onButtonEvent(Button.A, input.buttonEventClick(), function on_button_a() {
-    zahlenfolge(0, 10, 2)
+    zahlenfolge(randint(0, 100), randint(0, 100), 2)
 })
 //  gibt der Zahlenfolge  die parameter an
+// randint(0, 100) bedeutet das eine zufallszahl
+// zwischen 0 und 100 gewählt wird und diese wird dann für
+// die jeweiligen parameter eingesetzt
 input.onButtonEvent(Button.B, input.buttonEventClick(), function on_button_b() {
-    zahlenfolge(1, 10, 2)
+    zahlenfolge(randint(0, 100), randint(0, 100), 2)
 })
 function zahlenfolge(anfang: number, ende: number, schrittweite: number) {
     let X: number;

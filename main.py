@@ -1,11 +1,14 @@
- def on_button_a():
-    zahlenfolge(0, 10, 2)
+def on_button_a():
+    zahlenfolge(randint(0, 100), randint(0, 100), 2)
 input.on_button_event(Button.A, input.button_event_click(), on_button_a)
 
 # gibt der Zahlenfolge  die parameter an
 
 def on_button_b():
-    zahlenfolge(1, 10, 2)
+    zahlenfolge(randint(0, 100), randint(0, 100), 2)
+    #randint(0, 100) bedeutet das eine zufallszahl
+    #zwischen 0 und 100 gewählt wird und diese wird dann für
+    #die jeweiligen parameter eingesetzt
 input.on_button_event(Button.B, input.button_event_click(), on_button_b)
 
 def zahlenfolge(anfang: number, ende: number, schrittweite: number):
